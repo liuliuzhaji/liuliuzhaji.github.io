@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+ <html > 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>homegage</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <embed src="media/Burning.mp3" autostart="true" loop="true" hidden="true"></embed>
+    <body >
+    	<div class="content">
+    		
+    		<header>
+    			<img src="images/1.jpg" class="img">
+    			<div class="story">Rormantic Stories</div>
+    		</header>
+    	</div>
+    	<div class="content">
+    		<div class="con">
+	    		<div class="left">
+					<img src="images/2.jpg" class="img">
+	    		</div>
+	    		<div class="right">
+	    			<div class="line">Love，<br>
+						Well，when comes to romantic love，<br>
+						Well，when comes to romantic love，
+						Beautiful and intoxicating，heartbreaking and soul-crushing，often all <br>at the same time. Why do we choose to put ourselves through its romantic wringer?
+					</div>
+	    		</div>
+	    	</div>
+	    	<div class="con">
+	    		<div class="left">
+	    			<div class="line">Seriously, what is love? <br>
+					A verb? A noun? A universal truth? An ideal?<br> A common thread of all religions ?<br>
+					Let's enter the world of romantic fiction and <br>discover the beauty of love together.
+					</div>
+					
+	    		</div>
+	    		<div class="right">
+	    			<img src="images/3.jpg" class="img">
+	    		</div>
+	    	</div>
+	    	<div class="con">
+	    		<div class="lefter">
+	    			<span id="box"></span>
+	    		</div>
+	    		<div class="righter">
+	    			<a href="story.html">What's Your Story</a>
+	    			<span>click me here</span>
+	    		</div>
+	    		<img src="images/4.jpg" class="tu">
+	    	</div>
+    	</div>
+    	<div class="content">
+    		<h2>Now let's choose a novel that you like and start our journey！</h2>
+    		<ul class="list">
+    			<li>
+    				<img src="images/5.jpg" class="img">
+    				<a href="pride.html"><span>Click Me Here</span></a>
+    			</li>
+    			<li>
+    				<img src="images/6.jpg" class="img">
+    				<a href="hong.html"><span>Click Me Here</span></a>
+    			</li>
+    		</ul>
+    	</div>
+  	<script>
+	        function getToday() {
+	            
+	            var box = document.getElementById("box");
+	            var today = new Date();
+	
+	            var yy = today.getFullYear(); //年
+	
+	            var mm = todouble(today.getMonth() + 1); //月，从0开始，0代表1月份
+	
+	            var dd = todouble(today.getDate());//日
+	
+	            var hh = todouble(today.getHours());//时
+	
+	            var MM = todouble(today.getMinutes());//分
+	
+	           
+	
+	            var ee = today.getDay();//星期。从0开始，0代表周日
+	
+	            var dddd = yy + "." + mm + "." + dd + "."  + hh + ":" + MM  ;
+	
+	            box.innerHTML = dddd;
+	        }
+	        
+	        getToday();
+	        var timer = setInterval(getToday, 1000);
+	
+	        function todouble(n) {
+	            return n < 10 ? "0" + n : "" + n;
+	        }
+	
+	    </script>
+    </body>
+</html>
